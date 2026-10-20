@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gasbench"
+version = "0.2.0"
+description = "GasBench: a reproducible benchmark harness for drift-aware gas sensor recognition (closed-set, open-set, anomaly detection) with calibration-guided domain adaptation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Peng Jingyi", email = "pjy@example.invalid" }]
+keywords = ["gas sensors", "domain adaptation", "sensor drift", "open-set recognition", "benchmark"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+gasbench = "gasbench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gasbench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

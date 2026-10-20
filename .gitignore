@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.idea/
+.vscode/
+*.egg-info/
+
+# Runtime data / generated outputs (not distributed)
+data/raw/
+data/processed/
+data/CDSL/
+data/CDSL_csv/
+data/gsalc_dl/
+results/
+main_results/
+docs/figures/
+
+# OS / misc
+Thumbs.db
+.DS_Store

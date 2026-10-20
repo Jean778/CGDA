@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use GasBench in your research, please cite the companion paper as follows."
+title: "GasBench: A Reproducible Benchmark for Drift-Aware Gas Sensor Recognition"
+abstract: >-
+  GasBench packages the evaluation protocol behind calibration-guided domain
+  adaptation (CGDA) for gas sensors: three public datasets, six protocol
+  families (LOBO, budget, chronological, single-source, open-set, concentration
+  transfer, domain/event detection), eight training mechanisms, and a
+  standardized, hashed, reproducible reporting contract.
+authors:
+  - family-names: Peng
+    given-names: Jingyi
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+date-released: "2026-09-15"
+version: "0.1.0"
+license: MIT
+keywords:
+  - gas sensors
+  - sensor drift
+  - domain adaptation
+  - open-set recognition
+  - anomaly detection
+  - benchmark
